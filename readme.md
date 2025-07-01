@@ -77,8 +77,6 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 
 docker build -t app-alura-aula-01 .
 
-ula-01 .
-
 Alalisando Imagem Criada:
 docker image ls
 Rodando a Imagem:
