@@ -66,3 +66,21 @@ Este projeto é uma API desenvolvida com FastAPI para gerenciar alunos, cursos e
 - Para reiniciar o banco, basta apagar o arquivo `escola.db` (isso apagará todos os dados).
 
 ---
+## Documentação do Primeiro Dia da Imersão DevOps
+### 1. Criação do Ambiente usando Docker - Dockerfile
+- **Dockerfile:**
+- Cria uma imagem Docker com o Python 3.10 e instala as dependências do projeto.
+- Executa o projeto FastAPI.
+- A imagem Docker é criada com o nome `alura-fastapi`.
+- O projeto é executado com o comando `uvicorn app:app --reload`.
+- A porta 8000 é exposta para acesso externo.
+
+docker build -t app-alura-aula-01 .
+
+ula-01 .
+
+Alalisando Imagem Criada:
+docker image ls
+Rodando a Imagem:
+docker container run -d -p 8000:8000 app-alura-aula-01
+
