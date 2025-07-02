@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  api:
+    # Constrói a imagem a partir do Dockerfile presente no diretório atual ('.')
+    build: .
+    # Comando para iniciar a aplicação com uvicorn.
+    # O host 0.0.0.0 permite que a aplicação seja acessível de fora do container.
+    # A flag --reload ativa o hot-reloading, reiniciando o servidor a cada alteração no código.
+    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      # Monta o diretório atual do seu projeto no diretório /app dentro do container.
+      # Isso permite que o hot-reloading funcione e também que o banco de dados
+      # SQLite (escola.db) seja salvo na sua máquina local, persistindo os dados.
+      - .:/app
+    ports:
+      # Mapeia a porta 8000 da sua máquina para a porta 8000 do container.
+      - "8000:8000"

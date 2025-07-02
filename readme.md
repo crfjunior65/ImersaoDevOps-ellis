@@ -82,3 +82,15 @@ docker image ls
 Rodando a Imagem:
 docker container run -d -p 8000:8000 app-alura-aula-01
 
+## Na Segunda Aula da Imersão DevOps:
+### 2. Criação do Ambiente usando Docker Compose - docker-compose.yml
+- **docker-compose.yml:**
+- Define um serviço chamado `app` que usa a imagem `app-alura-aula-01`.
+- Executa o projeto FastAPI
+- A porta 8000 é exposta para acesso externo.
+- O projeto é executado com o comando `uvicorn app:app --reload`.
+- O serviço `app` depende do serviço `db` para acessar o banco de dados SQLite.
+
+docker-compose up -d
+
+## Na Terceira Aula da Imersão DevOps
