@@ -93,4 +93,14 @@ docker container run -d -p 8000:8000 app-alura-aula-01
 
 docker-compose up -d
 
+# Criamos um workflow para criar a imagem do projeto sando GuitHub Actions:
+Usando a Action do Docker Hub: Docker Image
+- Criamos um arquivo chamado .github/workflows/docker-image.yml
+- Esse arquivo contém as instruções para criar a imagem Docker do projeto.
+- O arquivo é executado automaticamente pelo GitHub Actions quando o código é enviado para o repositório.
+- A imagem Docker é criada com o nome `alura-fastapi`.
+- A imagem é enviada para o Docker Hub.
+- 
+
+
 ## Na Terceira Aula da Imersão DevOps
