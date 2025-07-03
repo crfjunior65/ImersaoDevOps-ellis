@@ -101,6 +101,25 @@ Usando a Action do Docker Hub: Docker Image
 - A imagem Docker é criada com o nome `alura-fastapi`.
 - A imagem é enviada para o Docker Hub.
   
-
-
 ## Na Terceira Aula da Imersão DevOps
+### Instalação do Google Cloud SDK
+- Baixe o instalador do Google Cloud SDK:
+ https://cloud.google.com/sdk/docs/install#deb
+
+ - Instale o Google Cloud SDK:
+'''sh
+ sudo apt-get update && sudo apt-get install google-cloud-cli
+ gcloud init
+'''
+- Acesse a Console do Google Cloud Platform:
+  https://console.cloud.google.com/
+
+'''sh
+gcloud projects list
+PROJECT_ID                 NAME                       PROJECT_NUMBER
+imersaodevops-alura-52942  ImersaoDevOps-Alura-52942  878575708569
+isometric-goods-2q6tl                                 497042443699
+lab-gke-25072023           Lab-gke-25072023           537613211020
+my-project-23072024        My Project 23072024        836941744682
+uplifted-smile-388422      My First Project           348376834025
+'''
