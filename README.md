@@ -139,4 +139,5 @@ Building using Dockerfile and deploying container to Cloud Run service [app] in 
   ✓ Setting IAM Policy...                                                                                                              
 Done.                                                                                                                                  
 Service [app] revision [app-00001-bzz] has been deployed and is serving 100 percent of traffic.
-Service URL: https://app-878575708569.southamerica-east1.run.app
+
+Service URL: https://app-878575708569.southamerica-east1.run.app/docs
