@@ -122,4 +122,21 @@ isometric-goods-2q6tl                                 497042443699
 lab-gke-25072023           Lab-gke-25072023           537613211020
 my-project-23072024        My Project 23072024        836941744682
 uplifted-smile-388422      My First Project           348376834025
+
+gcloud config set project imersaodevops-alura-52942
 '''
+
+## Build da Aplicação no Google Cloud Build
+
+Building using Dockerfile and deploying container to Cloud Run service [app] in project [imersaodevops-alura-52942] region [southamerica-east1]
+✓ Building and deploying new service... Done.                                                                                          
+  ✓ Creating Container Repository...                                                                                                   
+  ✓ Uploading sources...                                                                                                               
+  ✓ Building Container... Logs are available at [https://console.cloud.google.com/cloud-build/builds;region=southamerica-east1/62cc4d4f
+  -19d5-4ebf-abc9-23350b039a82?project=878575708569].                                                                                  
+  ✓ Creating Revision...                                                                                                               
+  ✓ Routing traffic...                                                                                                                 
+  ✓ Setting IAM Policy...                                                                                                              
+Done.                                                                                                                                  
+Service [app] revision [app-00001-bzz] has been deployed and is serving 100 percent of traffic.
+Service URL: https://app-878575708569.southamerica-east1.run.app
